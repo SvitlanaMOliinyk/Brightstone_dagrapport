@@ -1,4 +1,4 @@
- order_id; datum;klant;product;categorie;aantal;prijs
+order_id;datum;klant;product;categorie;aantal;prijs
 1;18-9-2026;Louise M. Watterson;Muis;Accessoires;3;25,99
 2;18-9-2026;Derrick C. Russo;USB-hub;Accessoires;2;83,4
 3;18-9-2026;Craig A. Harris;Monitor;Overig;1;300,9
