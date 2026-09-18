@@ -43,7 +43,8 @@ def analyse_orders(orders: list[dict[str, Any]]) -> dict[str, Any]:
         'total_orders': report.total_orders(),
         'top_5_clients': report.calculate_top('klant', 5),
         'top_5_products': report.calculate_top('product', 5),
-        'revenue_category': report.calculate_top('categorie')
+        'revenue_category': report.calculate_top('categorie'),
+        'date': report.orders[0]['datum']
     }
 
 
