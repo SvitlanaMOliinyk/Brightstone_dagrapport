@@ -2,4 +2,5 @@
 .idea/
 __pycache__/
 *.pyc
-reports/
+rapport.json
+rapport.md
