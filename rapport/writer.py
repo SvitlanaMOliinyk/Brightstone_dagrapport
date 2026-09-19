@@ -1,6 +1,6 @@
 from typing import Any
-from markdown_writer import write_markdown
-from json_writer import write_json
+from .markdown_writer import write_markdown
+from .json_writer import write_json
 
 def write_report(report_data: dict[str, Any], output: str, format: str) -> None:
     if format == "markdown":
