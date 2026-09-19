@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 rapport.json
 rapport.md
+rapport_*.json
+rapport_*.md
