@@ -8,5 +8,12 @@ def write_report(report_data: dict[str, Any], output: str, format: str) -> None:
     elif format == "json":
         report_text = write_json(report_data)
 
+    if output == 'rapport_<datum>.md':
+        if format == 'markdown':
+            output = f"rapport_{report_data['date']}.md"
+
+        elif format == 'json':
+            output = f"rapport_{report_data['date']}.json"
+
     with open(output, "w", encoding="utf_8") as file:
         file.write(report_text)

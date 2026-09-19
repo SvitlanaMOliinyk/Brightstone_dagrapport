@@ -16,8 +16,17 @@ def main():
                         help='Uitvoerformaat: markdown of json')
 
     args = parser.parse_args()
-    return args
 
+    if args.output != 'rapport_<datum>.md':
+        if args.format == 'markdown':
+            if not args.output.endswith('.md'):
+                raise ValueError('De bestandsextentie komt niet overeen met het geselecteerde formaat')
+
+        elif args.format == 'json':
+            if not args.output.endswith('.json'):
+                raise ValueError('De bestandsextentie komt niet overeen met het geselecteerde formaat')
+
+    return args
 
 
 if __name__ == "__main__":
