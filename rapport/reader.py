@@ -1,7 +1,7 @@
 import csv
 from decimal import Decimal, InvalidOperation
 from typing import Any
-from errors import InvalidCsvError, MissingColumnError
+from .errors import InvalidCsvError, MissingColumnError
 
 REQUIRED_COLUMNS = ['order_id', 'datum', 'klant', 'product', 'categorie', 'aantal', 'prijs']
 
