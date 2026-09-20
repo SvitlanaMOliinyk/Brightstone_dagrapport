@@ -2,6 +2,14 @@ from typing import Any
 from datetime import datetime
 
 def write_markdown(report_data: dict[str, Any]) -> str:
+    """Convert the report data into Markdown.
+
+    Args:
+        report_data: Data to be written to file.
+
+    Returns:
+        Markdown string.
+    """
     date = datetime.strptime(report_data['date'], '%d-%m-%Y').strftime('%Y-%m-%d')
     markdown = f"# {"Dagrapport Brightstone":<25} {"—":<3} {date:<10}\n\n"
 
