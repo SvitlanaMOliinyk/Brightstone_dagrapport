@@ -44,7 +44,7 @@ def read_orders(path: str) -> list[dict[str, Any]]:
         for row in reader:
             try:
                 row['prijs'] = Decimal(row['prijs'].replace(',', '.'))
-            except InvalidOperation:
+            except (InvalidOperation, AttributeError):
                 raise InvalidCsvError('Ongeldig csv-bestand')
             orders_data.append(row)
         if len(orders_data) == 0:
