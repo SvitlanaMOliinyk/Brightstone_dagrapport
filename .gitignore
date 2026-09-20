@@ -9,3 +9,6 @@ rapport_*.md
 report.md
 .coverage
 htmlcov/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
