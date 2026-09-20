@@ -3,6 +3,13 @@ from .markdown_writer import write_markdown
 from .json_writer import write_json
 
 def write_report(report_data: dict[str, Any], output: str, format: str) -> None:
+    """Select the output format and file name, then write a report.
+
+    Args:
+        report_data: Data to be written to file.
+        output: Output file name.
+        format: Format of output file, either markdown or json.
+    """
     if format == "markdown":
         report_text = write_markdown(report_data)
     elif format == "json":

@@ -5,7 +5,7 @@ from . import reader
 from . import report
 from . import writer
 
-logging.basicConfig(format='[%(levelname)s] %(message)s', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 try:

@@ -1,7 +1,15 @@
 import argparse
 
 
-def main():
+def main() -> argparse.Namespace:
+    """Parse arguments from the command line and validate the output file extension.
+
+    Returns:
+        Parsed command line arguments.
+
+    Raises:
+        ValueError: If the output file extension doesn't match the selected format.
+    """
     parser = argparse.ArgumentParser(
         description='Brighstone dagrapport - leest een CSV met orders en produceert een leesbaar rapport.',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)

@@ -9,6 +9,6 @@ class InvalidCsvError(Exception):
 class MissingColumnError(Exception):
     """Raised when a required column is missing from CSV file.
 
-       Inherits exception behavior from Exception class.
-       """
+    Inherits exception behavior from Exception class.
+    """
     pass
