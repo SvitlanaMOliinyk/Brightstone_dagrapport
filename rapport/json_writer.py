@@ -2,6 +2,7 @@ import json
 from decimal import Decimal
 from typing import Any
 
+
 def convert_to_str(value: Any) -> str:
     """Convert the value to a string.
 
@@ -28,7 +29,5 @@ def write_json(report_data: dict[str, Any]) -> str:
 
     Returns:
         JSON string.
-       """
+    """
     return json.dumps(report_data, default=convert_to_str, indent=4)
-
-
