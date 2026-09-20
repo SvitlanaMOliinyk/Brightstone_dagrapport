@@ -7,3 +7,5 @@ rapport.md
 rapport_*.json
 rapport_*.md
 report.md
+.coverage
+htmlcov/

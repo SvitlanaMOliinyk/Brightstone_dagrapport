@@ -3,7 +3,6 @@ class InvalidCsvError(Exception):
 
     Inherits exception behavior from Exception class.
     """
-    pass
 
 
 class MissingColumnError(Exception):
@@ -11,4 +10,3 @@ class MissingColumnError(Exception):
 
     Inherits exception behavior from Exception class.
     """
-    pass
