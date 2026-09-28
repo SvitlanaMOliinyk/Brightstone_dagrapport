@@ -44,5 +44,3 @@ def main() -> argparse.Namespace:
     return args
 
 
-if __name__ == "__main__":
-    main()
