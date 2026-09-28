@@ -27,7 +27,7 @@ class ReportData:
         """
         total_revenue = Decimal(0)
         for order in self.orders:
-            total_revenue += order["prijs"]
+            total_revenue += (order["prijs"] * int(order["aantal"]))
         return total_revenue
 
     def calculate_price_per_column_item(self, column_name: str) -> dict[str, Any]:
@@ -43,7 +43,7 @@ class ReportData:
 
         for order in self.orders:
             column = order[column_name]
-            price = order["prijs"]
+            price = order["prijs"] * int(order["aantal"])
             if column in column_items:
                 column_items[column]["prijs"] += price
             else:
